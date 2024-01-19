@@ -2,10 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function Header(){
-  retur
+  return <h1>Hello world!</h1>
 }
 function App() {
-  
+  return <Header/>;
 }
 
 export default App;
