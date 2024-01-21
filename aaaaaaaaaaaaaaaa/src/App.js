@@ -1,19 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from "../components/Header.js"
-import Main from '../components/Main';
-import Sidebar from '../components/Sidebar';
 
-export default function App(){
-  return (
-    <div className ="App">
-      <Header/>
-      <div>
-        <Main userName="Mack" num={5}/>
-        <Sidebar/>
-      </div>
-    </div>
-  )
-}
+import './App.css';
+
+
+
+function App() { 
+  return ( 
+    <div className="App"> 
+      This is the starting code for "Your first component" ungraded lab
+      He
+    </div> 
+
+  ); 
+} 
+ 
+export default App;
+ 
+
 
 

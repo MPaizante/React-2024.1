@@ -1,13 +1,7 @@
-function Header(props) {
-    const style = {
-        color:'lightblue',
-    }
-    return (
-        <div>
-            <h1 style={style}>Hello, {props.name}</h1>
-            <p>Header content here</p>
-        </div>
-    );
-};
+function X() { 
+    return ( 
+      <h1>This is an h1 heading.</h1> 
+    ) 
+  } 
 
-export default Header;
+export default X;
