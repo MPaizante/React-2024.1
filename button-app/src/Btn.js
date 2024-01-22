@@ -14,6 +14,7 @@ function Btn(){
         console.log('third example'); };
     const clickHandler = () => console.log('mouse over');
     const clickHandler2 = () => console.log('CLICKED');
+    const fourthExample = () => console.log('fourth example');
     return(
         <div>
             <button onMouseOver={clickHandler}>
@@ -22,12 +23,12 @@ function Btn(){
             <br/>
             <br/>
             <button onClick={() => console.log('second example')}>
-                An inline anonymous ES6 function event handler
+                An inline anonymous ES6 function event handler 2
             </button>
             <br/>
             <br/>
             <button onClick={thirdExample}>
-                 using a separate function declaration
+                 using a separate function declaration 3
             </button>
             <br/>
             <br/>
@@ -35,6 +36,12 @@ function Btn(){
             <button onClick={clickHandler2}>
                Click Me
             </button>
+
+            <br/>
+            <br/>
+            <button onClick={fourthExample}>
+            using a separate function expression 4
+             </button>
         </div>
 
 
