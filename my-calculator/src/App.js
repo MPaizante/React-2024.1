@@ -15,7 +15,7 @@ function App() {
   }; 
  
   function minus(e) { 
-  	// Add the code for the minus function 
+    return 
   };
  
   function times(e) { 
