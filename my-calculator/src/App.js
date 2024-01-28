@@ -1,9 +1,6 @@
-import {
-  useState,
-  useRef
-} from "react"; 
-import "./App.css";
-
+import React, { useState, useRef } from "react"; 
+import "./App.css"; 
+ 
 function App() { 
   const inputRef = useRef(null); 
   const resultRef = useRef(null); 
@@ -11,41 +8,42 @@ function App() {
  
   function plus(e) { 
     e.preventDefault(); 
+    // const inputVal = inputRef.current.value; 
+    // const newResult = result + Number(inputVal); 
+    // setResult(newResult); 
     setResult((result) => result + Number(inputRef.current.value)); 
-  }; 
+  } 
  
   function minus(e) { 
-    e.preventDefault();
-    setResult((result) => result - Number(inputRef.current.value) );
-  };
+    e.preventDefault(); 
+    const inputVal = inputRef.current.value; 
+    const newResult = result - Number(inputVal); 
+    setResult(newResult); 
+  } 
  
   function times(e) { 
-    if (result === Number(0)) {
-      setResult((result => result + Number(1)));
-    }
-    e.preventDefault();
-    setResult((result) => result * Number(inputRef.current.value));
-    
-  }; 
+    e.preventDefault(); 
+    const inputVal = inputRef.current.value; 
+    const newResult = result * Number(inputVal); 
+    setResult(newResult); 
+  } 
  
   function divide(e) { 
-    if (result === Number(0)) {
-      setResult((result => result + Number(inputRef.current.value)));
-    } else {
-      setResult((result) =>  result / Number(inputRef.current.value));
-    }
-    e.preventDefault();
-  };
+    e.preventDefault(); 
+    const inputVal = inputRef.current.value; 
+    const newResult = result / Number(inputVal); 
+    setResult(newResult); 
+  } 
  
   function resetInput(e) { 
     e.preventDefault(); 
     inputRef.current.value = 0; 
-  }; 
+  } 
  
   function resetResult(e) { 
-  	e.preventDefault(); 
-    setResult(0) 
-  }; 
+    e.preventDefault(); 
+    setResult(0); 
+  } 
  
   return ( 
     <div className="App"> 
@@ -53,10 +51,8 @@ function App() {
         <h1>Simplest Working Calculator</h1> 
       </div> 
       <form> 
-        <p ref={resultRef}> 
-          Result: {result}
-        </p> 
-        <input
+        <p ref={resultRef}>{result}</p> 
+        <input 
           pattern="[0-9]" 
           ref={inputRef} 
           type="number" 
@@ -73,4 +69,4 @@ function App() {
   ); 
 } 
  
-export default App; 
+export default App;
