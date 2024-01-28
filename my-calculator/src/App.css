@@ -1,5 +1,6 @@
 * { 
-  font-family: sans-serif; 
+  font-family: sans-serif;
+  text-align: center;
 } 
 input, 
 button { 
@@ -8,9 +9,11 @@ button {
   border-radius: 5px; 
 } 
 input { 
-  display: block; 
+  display: inline-flex; 
   margin-bottom: 20px; 
+
 } 
+
 button { 
   border: 1px solid gray; 
   background: whitesmoke; 

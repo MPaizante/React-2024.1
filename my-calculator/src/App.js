@@ -51,13 +51,14 @@ function App() {
         <h1>Simplest Working Calculator</h1> 
       </div> 
       <form> 
-        <p ref={resultRef}>{result}</p> 
+        <p ref={resultRef}><strong>Result: {result}</strong></p> 
         <input 
           pattern="[0-9]" 
           ref={inputRef} 
           type="number" 
           placeholder="Type a number" 
         /> 
+        <br/>
         <button onClick={plus}>add</button> 
         <button onClick={minus}>subtract</button> 
         <button onClick={times}>multiply</button> 
